@@ -178,8 +178,14 @@ select {
 }
 
 .caption {
+    padding: 15px;
     width: 650px;
-    height: 100px;
+    height: 120px;
     color: black;
     background-color: green;
+    font-size: 16px;
+}
+
+.article {
+    font-size: 20px;
 }

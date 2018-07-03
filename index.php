@@ -19,8 +19,8 @@ include_once 'settings/db.php';
                         echo '<div class="caption"><div class="article">';
                         echo $result['caption'];
                         echo '</div><br><br>';
-                        echo $result['article'];
-                        echo '</div><br>';
+                        echo substr($result['article'],0,300);
+                        echo '...</div><br>';
                     }
 
                 ?>
