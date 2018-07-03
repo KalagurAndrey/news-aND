@@ -1,0 +1,183 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+h3 {
+    font-size: 22px;
+    margin-bottom: 10px
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+html {
+    height: 100%;
+
+}
+
+body {
+    font: 16px;
+    width: 100%;
+    height: 100%;
+    background: #00616c;
+}
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+
+
+.header {
+    text-align: center;
+    height: 40px;
+    background: #f2feff;
+    color: #828386;
+    font-size: 30px;
+    padding-top: 25px;
+}
+
+
+.middle {
+    width: 100%;
+    padding: 0 0 100px;
+    position: relative;
+}
+.middle:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+.container {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+.content {
+    background: #f3feff;
+    color: #00a89e;
+    padding: 20px 300px 0 25px;
+
+}
+
+.menu-full {
+    width: 1000px;
+    background: #089296;
+    color: #d1f9fe;
+    display: inline-block;
+}
+
+.menu {
+    float: left;
+    padding: 10px;
+    padding-left: 30px;
+    height: 20px;
+    background: #089296;
+    color: #fff;
+    font-size: 20px;
+}
+
+.menu:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+
+.right-sidebar {
+    float: left;
+    width: 280px;
+    margin-left: -280px;
+    position: relative;
+    background: #009c96;
+    color: #caf9fe;
+}
+
+.footer {
+    width: 1000px;
+    margin: -50px auto 0;
+    height: 50px;
+    background: #0a969a;
+    position: relative;
+}
+
+
+input[type=submit] {
+    width: 180px;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 8px;
+    border: 1px solid #A83B2D;
+    background: #cff0de;
+
+}
+
+input[type=submit]:hover {
+    background: #fff;
+    opacity: 0.5;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    font-size: 16px;
+    height: 18px;
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 7px;
+}
+
+select {
+    height: 30px;
+    width: 215px;
+    margin-bottom: 7px
+}
+
+.MessageBlock {
+    border: 1px solid #cff0de;
+    background: #fff;
+    padding: 10px;
+}
+
+.capinp {
+    max-width: 80px;
+}
+
+.capimg {
+    width: 110px;
+    height: 28px;
+    float: right;
+    border: 1px solid black;
+}
+
+.capdiv {
+    width: 215px;
+    height: 30px;
+
+}
+
+.art-art {
+    width: 300px;
+    height: 300px;
+}
