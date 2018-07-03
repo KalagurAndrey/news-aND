@@ -8,8 +8,6 @@ include_once 'settings/db.php';
     <div class="container">
         <div class="content">
 
-            <h3>Статьи:</h3>
-
             <?php
                 $id = $_GET['id'];
 
@@ -21,6 +19,10 @@ include_once 'settings/db.php';
                 echo $result['article'];
                 echo '</div><br>Просмотров: ';
                 echo $result['views'];
+                echo '<br><br><a href="edit_art.php?id=';
+                echo $id;
+                echo '">Редактировать статью';
+
 
                 $select_v = mysqli_query($CONNECT,"UPDATE news SET views = views + 1 WHERE id = $id");
 
