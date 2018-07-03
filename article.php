@@ -8,12 +8,26 @@ include_once 'settings/db.php';
     <div class="container">
         <div class="content">
 
-            <h3>Статьи</h3>
+            <h3>Статьи:</h3>
+
+            <?php
+                $id = $_GET['id'];
+
+                $select = mysqli_query($CONNECT, "SELECT * FROM news WHERE id = $id");
+                $result = mysqli_fetch_array($select);
+                echo '<div class="art-art"><div class="art-capt">';
+                echo $result['caption'];
+                echo '</div><br>';
+                echo $result['article'];
+                echo '</div><br>Просмотров: ';
+                echo $result['views'];
+
+                $select_v = mysqli_query($CONNECT,"UPDATE news SET views = views + 1 WHERE id = $id");
+
+            ?>
 
 
 
-
-        </div>
     </div>
 </div>
     <?php

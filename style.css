@@ -118,11 +118,13 @@ body {
 }
 
 .footer {
-    width: 1000px;
+    width: 960px;
     margin: -50px auto 0;
+    text-align: center;
     height: 50px;
     background: #0a969a;
     position: relative;
+    padding: 20px;
 }
 
 
@@ -195,4 +197,12 @@ select {
     padding: 5px;
     font-size: 14px;
     background-color: #00a89e;
+}
+
+.art-art {
+    color: black;
+}
+
+.art-capt {
+    font-size: 26px;
 }

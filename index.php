@@ -17,8 +17,11 @@ include_once 'settings/db.php';
 
                     while($result = mysqli_fetch_array($select)) {
                         echo '<div class="caption"><div class="article">';
+                        echo '<a href=article.php?id=';
+                        echo $result['id'];
+                        echo '>';
                         echo $result['caption'];
-                        echo '</div><br><br>';
+                        echo '</a></div><br><br>';
                         echo substr($result['article'],0,300);
                         echo '...</div><br>';
                     }
