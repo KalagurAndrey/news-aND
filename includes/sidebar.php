@@ -4,6 +4,10 @@
     $select = mysqli_query($CONNECT, "SELECT * FROM news WHERE date > NOW() - INTERVAL 7 DAY ORDER BY views DESC LIMIT 10 ");
 
     while($result = mysqli_fetch_array($select)) {
+
+        echo '<a href=article.php?id=';
+        echo $result['id'];
+        echo '>';
         echo '<div class="top-ten">';
         echo $result['caption'];
         echo '</div><br>';

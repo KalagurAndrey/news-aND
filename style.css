@@ -189,6 +189,10 @@ select {
     font-size: 16px;
 }
 
+.caption:hover{
+    opacity: 0.8;
+}
+
 .article {
     font-size: 20px;
 }
@@ -197,6 +201,7 @@ select {
     padding: 5px;
     font-size: 14px;
     background-color: #00a89e;
+    color: #fff;
 }
 
 .art-art {
@@ -205,4 +210,8 @@ select {
 
 .art-capt {
     font-size: 26px;
+}
+
+.top-ten:hover {
+    opacity: 0.8;
 }
