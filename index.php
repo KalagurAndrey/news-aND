@@ -11,7 +11,19 @@ include_once 'settings/db.php';
 		<div class="container">
 			<div class="content">
 
-				Много контента и новостей
+				<h3>Каталог статей</h3><br>
+                <?php
+                    $select = mysqli_query($CONNECT, "SELECT * FROM news");
+
+                    while($result = mysqli_fetch_array($select)) {
+                        echo '<div class="caption"><div class="article">';
+                        echo $result['caption'];
+                        echo '</div><br><br>';
+                        echo $result['article'];
+                        echo '</div><br>';
+                    }
+
+                ?>
 
 			</div>
 		</div>

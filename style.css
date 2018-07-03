@@ -177,7 +177,9 @@ select {
 
 }
 
-.art-art {
-    width: 300px;
-    height: 300px;
+.caption {
+    width: 650px;
+    height: 100px;
+    color: black;
+    background-color: green;
 }
