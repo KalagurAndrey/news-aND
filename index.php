@@ -20,6 +20,7 @@ include_once 'settings/db.php';
                     echo '<a href=article.php?id=';
                     echo $result['id'];
                     echo '>';
+
                     echo $result['caption'];
                     echo '</a></div><br><br>';
                     echo substr($result['article'],0,300);
