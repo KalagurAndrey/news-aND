@@ -4,6 +4,8 @@
     <title>KalagurNews - новостной портал</title>
     <meta charset="utf-8" />
     <link href="style.css" rel="stylesheet">
+    <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+    <script>tinymce.init({ selector:'textarea' });</script>
 </head>
 
 <body>

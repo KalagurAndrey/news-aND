@@ -10,6 +10,7 @@ include_once 'settings/db.php';
         $caption = $_POST['caption'];
         $article = $_POST['article'];
         $selectArt = mysqli_query($CONNECT, "UPDATE news SET caption = '$caption', article = '$article' WHERE id = '$id'");
+        echo "Запись успешно обновлена";
     }
 ?>
 
@@ -24,7 +25,7 @@ include_once 'settings/db.php';
             <form method="post" action="edit_art.php?id=<? echo $id;?>">
                 <input type="text" name="caption" value="<? echo $result['caption']; ?>" placeholder="Заголовок статьи"><br>
                 <textarea name="article" cols="80" rows="20"  placeholder="Статья"><? echo $result['article'];?></textarea>  <br>
-                <input type="file" value="Фотокарточка"><br><br>
+                <input type="file" name="src" value="Фотокарточка"><br><br>
                 <input type="submit" name="edit" value="Редактировать статью"><br><br>
             </form>
 

@@ -13,18 +13,18 @@ include_once 'settings/db.php';
 
 				<h3>Каталог статей</h3><br>
                 <?php
-                    $select = mysqli_query($CONNECT, "SELECT * FROM news");
+                $select = mysqli_query($CONNECT, "SELECT * FROM news");
 
-                    while($result = mysqli_fetch_array($select)) {
-                        echo '<div class="caption"><div class="article">';
-                        echo '<a href=article.php?id=';
-                        echo $result['id'];
-                        echo '>';
-                        echo $result['caption'];
-                        echo '</a></div><br><br>';
-                        echo substr($result['article'],0,300);
-                        echo '...</div><br>';
-                    }
+                while($result = mysqli_fetch_array($select)) {
+                    echo '<div class="caption"><div class="article">';
+                    echo '<a href=article.php?id=';
+                    echo $result['id'];
+                    echo '>';
+                    echo $result['caption'];
+                    echo '</a></div><br><br>';
+                    echo substr($result['article'],0,300);
+                    echo '...</div><br>';
+                }
 
                 ?>
 

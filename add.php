@@ -7,6 +7,7 @@ include_once 'settings/db.php';
     $caption = $_POST['caption'];
     $article = $_POST['article'];
         $query = mysqli_query($CONNECT,"INSERT INTO news(id ,caption, article, date) VALUES('', '$caption', '$article', NOW())") or die('Ошибка параметра');
+        echo 'Запись успешно добавлена в БД';
     }
 
 
@@ -20,10 +21,10 @@ include_once 'settings/db.php';
 
             <h3>Добавление статьи</h3>
 
-            <form method="post" action="add.php">
+            <form method="post" enctype="multipart/form-data" action="add.php">
                 <input type="text" name="caption" placeholder="Заголовок статьи"><br>
-                <textarea name="article" cols="80" rows="20" placeholder="Статья"></textarea>  <br>
-                <input type="file" value="Фотокарточка"><br><br>
+                <textarea name="article" id="textareas" maxlength="1000" cols="80" rows="20" placeholder="Статья"></textarea>  <br>
+                <input type="file" name="src" value="Фотокарточка" ><br><br>
                 <input type="submit" name="enter" value="Добавить новость"><br><br>
             </form>
 
