@@ -1,5 +1,8 @@
 <?
-
+    session_start();
+    if($_SESSION['name']) {
+        header('Location: login.php');
+    }
 
     include_once 'includes/header.php';
     include_once 'settings/db.php';

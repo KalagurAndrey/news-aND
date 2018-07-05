@@ -4,19 +4,19 @@
     include_once 'settings/db.php';
     $check = 0;
     if(isset($_POST['enter'])) {
+
         $login = $_POST['login'];
         $password = $_POST['password'];
 
-
-
-        $query = mysqli_query($CONNECT,"SELECT * FROM users WHERE login = $login");
+        $query = mysqli_query($CONNECT,"SELECT * FROM users WHERE login = '$login' AND password = '$password'");
         $user_data = mysqli_fetch_array($query);
 
 
 
-            if ($user_data['password'] == $password) {
 
-                $_SESSION['name'] = $user_data['id'];
+            if ($user_data['password'] == $password ) {
+
+                $_SESSION['name'] = $user_data['login'];
                 echo "Вы успешно авторизовались.";
 
             } else {
@@ -25,10 +25,12 @@
 
     }
 
-            if(isset($_POST['logout'])) {
-            unset($_SESSION['name']);
-            session_destroy();
-            }
+    if(isset($_POST['logout'])) {
+    unset($_SESSION['name']);
+    session_destroy();
+    }
+
+
     ?>
 
 
@@ -37,7 +39,7 @@
         <div class="content">
             <?php
             if(isset($_SESSION['name'])) {
-                echo  '<h3>Привет!</h3><br>
+                echo  '<h3>Привет, '.$_SESSION['name'].'</h3><br>
                 <form method="post" action="login.php">
                 <input type="submit" name="logout" value="Выйти">
                 </form> <br>
