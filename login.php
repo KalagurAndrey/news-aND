@@ -1,4 +1,5 @@
 <?
+    session_start();
     include_once 'includes/header.php';
     include_once 'settings/db.php';
     $check = 0;
@@ -6,11 +7,16 @@
         $login = $_POST['login'];
         $password = $_POST['password'];
 
+
+
         $query = mysqli_query($CONNECT,"SELECT * FROM users WHERE login = $login");
         $user_data = mysqli_fetch_array($query);
+
+
+
             if ($user_data['password'] == $password) {
-                session_start();
-                $_SESSION['name'] = $login;
+
+                $_SESSION['name'] = $user_data['id'];
                 echo "Вы успешно авторизовались.";
 
             } else {
@@ -31,7 +37,8 @@
         <div class="content">
             <?php
             if(isset($_SESSION['name'])) {
-                echo  'Привет, '.$login.'<br>
+               echo $user_data['id'];
+                echo  '<h3>Привет!</h3><br>
                 <form method="post" action="login.php">
                 <input type="submit" name="logout" value="Выйти">
                 </form> <br>

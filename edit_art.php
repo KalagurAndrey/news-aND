@@ -64,7 +64,7 @@ include_once 'settings/db.php';
             <form method="post" enctype="multipart/form-data" action="edit_art.php?id=<? echo $id;?>">
                 <input type="text" name="caption" value="<? echo $result['caption']; ?>" placeholder="Заголовок статьи"><br>
                 <textarea name="article" cols="80" rows="20"  placeholder="Статья"><? echo $result['article'];?></textarea>  <br>
-                <input type="file" name="photo" value="Фотокарточка"><br><br>
+                <input type="file" name="photo"><br><br>
                 <input type="submit" name="edit" value="Редактировать статью"><br><br>
             </form>
 

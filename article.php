@@ -1,4 +1,5 @@
 <?
+session_start();
 include_once 'includes/header.php';
 include_once 'settings/db.php';
 
@@ -21,9 +22,15 @@ include_once 'settings/db.php';
                 echo $result['article'];
                 echo '</div><br>Просмотров: ';
                 echo $result['views'];
-                echo '<br><br><a href="edit_art.php?id=';
-                echo $id;
-                echo '">Редактировать статью';
+
+                if(isset($_SESSION['name'])) {
+                    echo '<br><br><a href="edit_art.php?id=';
+                    echo $id;
+                    echo '">Редактировать статью';
+
+                } else {
+
+                }
 
 
                 $select_v = mysqli_query($CONNECT,"UPDATE news SET views = views + 1 WHERE id = $id");
