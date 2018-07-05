@@ -6,6 +6,7 @@ include_once 'settings/db.php';
     $fileName = '';
     $uploadName = '';
 
+
     if(isset($_POST['enter'])) {
     $caption = $_POST['caption'];
     $article = $_POST['article'];
@@ -29,7 +30,6 @@ include_once 'settings/db.php';
             $name_file = $_FILES['photo']['name'];
             $tmp_name = $_FILES['photo']['tmp_name'];
             $local_image = "src/";
-            var_dump($_FILES);
             move_uploaded_file($tmp_name,$local_image.$name_file);
 
 
