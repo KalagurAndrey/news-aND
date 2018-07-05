@@ -1,9 +1,11 @@
 <?
 
 session_start();
-    if($_SESSION['name'] == "reader") {
-        header('Location: index.php');
-    }
+
+
+if($_SESSION['name'] == 0) {
+    header('Location: index.php');
+}
 
 include_once 'includes/header.php';
 include_once 'settings/db.php';

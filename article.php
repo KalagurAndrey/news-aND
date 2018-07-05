@@ -1,4 +1,5 @@
 <?
+
 session_start();
 include_once 'includes/header.php';
 include_once 'settings/db.php';
@@ -16,22 +17,23 @@ include_once 'settings/db.php';
                 $result = mysqli_fetch_array($select);
                 echo '<div class="art-art"><div class="art-capt">';
                 echo $result['caption'].'</div>';
-               //if(!$result['src'] == 'src/.') {
+               if($result['src'] != 'src/.') {
                     echo '<br><img src="';
                     echo $result['src'];
                     echo '">';
-                 //    }
+                     }
 
                 echo $result['article'];
                 echo '</div><br>Просмотров: ';
                 echo $result['views'];
 
-                if($_SESSION['name'] == 'administrator') {
+                if($_SESSION['name'] == 1 and !empty($_SESSION)) {
                     echo '<br><br><a href="edit_art.php?id=';
                     echo $id;
                     echo '">Редактировать статью';
 
                 } else {
+
 
                 }
 
