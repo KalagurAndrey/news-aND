@@ -16,7 +16,8 @@
 
             if ($user_data['password'] == $password ) {
 
-                $_SESSION['name'] = $user_data['login'];
+                $_SESSION['name'] = $user_data['role'];
+
                 echo "Вы успешно авторизовались.";
 
             } else {

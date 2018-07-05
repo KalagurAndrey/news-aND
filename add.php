@@ -2,7 +2,7 @@
 
     session_start();
 
-    if(!$_SESSION['name']) {
+    if($_SESSION['name'] == 'reader') {
         header('Location: index.php');
     }
 include_once 'includes/header.php';
