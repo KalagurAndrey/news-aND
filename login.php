@@ -37,7 +37,6 @@
         <div class="content">
             <?php
             if(isset($_SESSION['name'])) {
-               echo $user_data['id'];
                 echo  '<h3>Привет!</h3><br>
                 <form method="post" action="login.php">
                 <input type="submit" name="logout" value="Выйти">

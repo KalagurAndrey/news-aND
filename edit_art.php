@@ -1,4 +1,10 @@
 <?
+
+session_start();
+    if(!$_SESSION['name']) {
+        header('Location: index.php');
+    }
+
 include_once 'includes/header.php';
 include_once 'settings/db.php';
 
