@@ -11,7 +11,7 @@ http://gearmobile.github.io/linux/install-xampp-in-linux-mint/
 
 sudo /opt/lampp/share/xampp-control-panel/xampp-control-panel.
 
-В ПУ нажимаем START XAMPP.
+№1.3 В ПУ нажимаем START XAMPP.
 
 
 №2 Клонируем репозиторий в папку lampp/htdocs командой:
