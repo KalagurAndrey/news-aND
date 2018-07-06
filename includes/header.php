@@ -26,10 +26,4 @@
         <a href="login.php">
             <div class="menu">Вход</div>
         </a>
-        <a href="#">
-            <div class="menu">Пустая</div>
-        </a>
-        <a href="#">
-            <div class="menu">Пустая</div>
-        </a>
     </div>
