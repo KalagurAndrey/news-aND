@@ -15,6 +15,7 @@ sudo /opt/lampp/share/xampp-control-panel/xampp-control-panel.
 
 
 №2 Клонируем репозиторий в папку lampp/htdocs командой 
+
 git clone https://github.com/KalagurAndrey/news-aND.git
 
 
