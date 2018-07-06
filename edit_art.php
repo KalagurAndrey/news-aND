@@ -22,7 +22,7 @@ if (isset($_POST['edit'])) {
     $caption = $_POST['caption'];
     $article = $_POST['article'];
 
-    if (isset($_FILES)) {
+    if (empty($_FILES)) {
         $photo2 = $_FILES['photo'];
         $name2 = $photo2['name'];
         $nameArray2 = explode('.', $name2);
@@ -82,4 +82,3 @@ if (isset($_POST['edit'])) {
     <?php
     include_once 'includes/sidebar.php';
     include_once 'includes/footer.php';
-

@@ -50,7 +50,8 @@ if (isset($_POST['enter'])) {
 
         }
         $query = mysqli_query($CONNECT,
-            "INSERT INTO news(id ,caption, article, date, src) VALUES('', '$caption', '$article', NOW(), '$dbpath')") or die('Ошибка параметра');
+            "INSERT INTO news(id ,caption, article, date, src) 
+                    VALUES('', '$caption', '$article', NOW(), '$dbpath')") or die('Ошибка параметра');
         echo 'Запись успешно добавлена в БД';
     }
 }

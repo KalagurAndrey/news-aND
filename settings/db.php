@@ -1,4 +1,6 @@
 <?php
-$CONNECT = mysqli_connect('localhost', 'root', '', 'u348451412_hex') or die(mysqli_error());
+include_once 'settings_db.php';
+
+$CONNECT = mysqli_connect(HOST, USER, PASSWORD, DATABASE) or die(mysqli_error());
 $CONNECT->set_charset('utf8');
 

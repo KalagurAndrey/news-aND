@@ -69,8 +69,8 @@ if (isset($_POST['enter'])) {
                 <h3>Регистрация</h3>
                 <form method="post" action="register.php">
                     <input type="text" name="login" placeholder="Логин" required><br>
-                    <input type="email" name="email" placeholder="E-mail" required><br>
-                    <input type="email" name="r_email" placeholder="Повторите E-mail" required><br>
+                    <input type="text" name="email" placeholder="E-mail" required><br>
+                    <input type="text" name="r_email" placeholder="Повторите E-mail" required><br>
                     <input type="password" name="password" placeholder="Пароль" required><br>
                     <input type="password" name="r_password" placeholder="Повторите пароль" required><br>
                     <input type="submit" name="enter" value="Зарегистрироваться" required><br><br>
