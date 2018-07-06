@@ -22,7 +22,7 @@ if (isset($_POST['edit'])) {
     $caption = $_POST['caption'];
     $article = $_POST['article'];
 
-    if (empty($_FILES)) {
+    if (!empty($_FILES)) {
         $photo2 = $_FILES['photo'];
         $name2 = $photo2['name'];
         $nameArray2 = explode('.', $name2);
