@@ -1,6 +1,11 @@
 Данный документ предназначен для разворачивания новостного сайта KALAGUR-NEWS.
 
-№1 Устанавливаем XAMMP для Linux Mint с версией php не ниже 7.2. Скачать можно по данной ссылке. (https://www.apachefriends.org/ru/index.html)
+№1 Скачиваем XAMMP для Linux Mint с версией php не ниже 7.2. Скачать можно по данной ссылке: 
+https://www.apachefriends.org/ru/index.html
+
+№1.1 Устанавливаем XAMMP. Подробная инструкция по установке:
+
+http://gearmobile.github.io/linux/install-xampp-in-linux-mint/
 
 №1.2 Запускаем панель управления XAMPP в терминале командой 
 
