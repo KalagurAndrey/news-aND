@@ -8,16 +8,22 @@ sudo /opt/lampp/share/xampp-control-panel/xampp-control-panel.
 
 В ПУ нажимаем START XAMPP.
 
+
 №2 Клонируем репозиторий в папку lampp/htdocs командой 
 git clone https://github.com/KalagurAndrey/news-aND.git
 
+
 №3 Получить доступ к phpmyadmin можно по ссылке localhost/phpmyadmin
+
 
 №3.1 Cоздаем базу данных с именем kalagur_news и импоритруем туда файл kalagur_news.sql
 
+
 №4  Доступ к сайту можно будет получить по ссылке localhost/news-aND/ . 
 
+
 База данных содержит 2 таблицы с именами users и news. 
+
 
 ФАЙЛОВАЯ СТРУКТРА:
 В директории includes содержатся подключаемые файлы с внешними блоками.
